@@ -4,7 +4,7 @@ import dataBase from "./CarDataBase";
 
 function costoTotal(db) {
   const total = db.reduce((acc, carro) => acc + carro.cost ,0);
-  return total;
+  return [total];
 }
 
 costoTotal(dataBase);
@@ -18,7 +18,7 @@ function promedio(db) {
     (acc, carro) => acc+ carro.test , 0
   };
   const costopromedioPARES => costototalsoloPARES / solopares.length;
-  return costopromedioPARES;
+  return [costopromedioPARES];
 }
 
 promedio(dataBase);
